@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+    <version>1.0.3</version>
+    <url>https://github.com/fraenzu98/MalerErp-Public/raw/main/MalerErp_Setup.exe</url>
+    <changelog>https://github.com/fraenzu98/MalerErp/commits/master</changelog>
+    <mandatory>false</mandatory>
+</item>
