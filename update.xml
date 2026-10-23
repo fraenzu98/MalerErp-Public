@@ -4,4 +4,5 @@
     <url>https://github.com/fraenzu98/MalerErp-Public/raw/main/WerkDesk_Setup.exe</url>
     <changelog>https://fraenzu98.github.io/MalerErp-Public/changelog.html</changelog>
     <mandatory>false</mandatory>
+    <checksum algorithm="SHA256">1764F516A77863BEA2AEC46FE9706E9EE2D39300E62BD7173E65B07FB8F69C91</checksum>
 </item>
