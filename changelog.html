@@ -1,24 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
+    <meta charset="utf-8">
+    <title>WerkDesk Änderungen</title>
     <style>
-        body { font-family: sans-serif; font-size: 13px; line-height: 1.5; color: #333; }
+        body { font-family: "Segoe UI", Arial, sans-serif; font-size: 13px; line-height: 1.5; color: #333; margin: 16px; }
         h2 { color: #1E3A8A; border-bottom: 1px solid #E5E7EB; padding-bottom: 5px; }
-        .version { font-weight: bold; color: #6B7280; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 5px; }
-        .new { color: #16A34A; font-weight: bold; }
+        h3 { color: #374151; margin-bottom: 4px; }
+        .version { font-weight: normal; color: #6B7280; font-size: 13px; }
+        ul { padding-left: 20px; margin-top: 4px; }
+        li { margin-bottom: 4px; }
+        .neu { color: #16A34A; font-weight: bold; }
+        .hinweis { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 8px 12px; }
     </style>
 </head>
 <body>
-    <h2>MalerErp v1.1.0 <span class="version">(Release: April 2026)</span></h2>
-    <p>Dieses Update enthält wichtige Sicherheits- und Funktionserweiterungen:</p>
+    <h2>WerkDesk 1.0.0 <span class="version">(Oktober 2026)</span></h2>
+    <p>Die erste offizielle Version von WerkDesk.</p>
+
+    <h3>Rechnungen und Offerten</h3>
     <ul>
-        <li><span class="new">[NEU]</span> <b>Lizenzierungssystem:</b> Deine Software ist nun kryptografisch geschützt.</li>
-        <li><span class="new">[NEU]</span> <b>Firmen-Branding:</b> Der Firmenname wird nun fest an die Lizenz gebunden.</li>
-        <li><span class="new">[NEU]</span> <b>Plugin-Schnittstelle:</b> Unterstützung für individuelle PDF-Vorlagen.</li>
-        <li><b>Optimierung:</b> Der Speicherort für Rechnungen wurde nach <i>ProgramData</i> verschoben.</li>
-        <li><b>Fix:</b> Diverse kleinere Stabilitätsverbesserungen im Mahnwesen.</li>
+        <li><span class="neu">[NEU]</span> MWST: Satz und MWST-Nummer in den Einstellungen, Ausweis auf allen Belegen.</li>
+        <li><span class="neu">[NEU]</span> Fortlaufende Rechnungsnummern pro Jahr, vergeben beim Buchen.</li>
+        <li><span class="neu">[NEU]</span> QR-Rechnung mit Referenz (QR-Referenz bei QR-IBAN, sonst SCOR) für den Zahlungsabgleich.</li>
+        <li><span class="neu">[NEU]</span> Endbetrag auf 5 Rappen gerundet.</li>
+        <li>Gebuchte Rechnungen sind gesperrt; Korrekturen über Storno und neue Rechnung.</li>
     </ul>
+
+    <h3>Belegdesign</h3>
+    <ul>
+        <li><span class="neu">[NEU]</span> Drei Vorlagen: Klassisch, Modern, Kompakt.</li>
+        <li><span class="neu">[NEU]</span> Eigenes Briefpapier als PDF, mit separater Folgeseite.</li>
+        <li><span class="neu">[NEU]</span> Adresse und Logo links oder rechts, Ränder, Schriftgrösse, Spalten und Bankverbindung in der Fusszeile.</li>
+    </ul>
+
+    <h3>Sicherheit und Daten</h3>
+    <ul>
+        <li><span class="neu">[NEU]</span> Tägliches Backup der Datenbank und Prüfung beim Start.</li>
+        <li><span class="neu">[NEU]</span> Passwörter werden verschlüsselt gespeichert; beim ersten Start legst du den Administrator selbst an.</li>
+        <li><span class="neu">[NEU]</span> Lizenz mit Firmenname, IBAN und Gültigkeitsdatum. Nach Ablauf bleiben alle Belege einsehbar (Nur-Lesen).</li>
+        <li>Updates werden vor der Installation auf ihre Prüfsumme geprüft.</li>
+    </ul>
+
+    <p class="hinweis">Lizenzen aus Vorabversionen sind nicht mehr gültig. Für WerkDesk 1.0.0 wird eine neue Lizenz benötigt.</p>
 </body>
 </html>
